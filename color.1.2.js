@@ -208,7 +208,7 @@ Color.hslTorgb = function(h, s, l){
     return {r:Math.round(r * 255), g:Math.round(g * 255), b:Math.round(b * 255)};
 };
 
-//Helper function for Color.hstTorgb
+//Helper function for Color.hslTorgb
 Color.hueTorgb = function(p, q, t){
     if(t < 0) t += 1;
     if(t > 1) t -= 1;
