@@ -1,0 +1,21 @@
+html, body {
+	margin: 0;
+	padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+a img {
+	border: none;
+}
+
+div {
+    padding: 0.2em;
+    font-size: 4em;
+}
+
+#transbox {
+    background: linear-gradient(to left, #555,#000,#555);
+    background-size: 50px;
+    background-repeat: repeat;
+}

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Color Extension</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="color.1.1.js"></script>
+	<script type="text/javascript">
+		$(function() {
+            var indigo = new Color("indigo");
+            var fadedblue = new Color("rgb(0,0,255)").fadeout(40);
+            var red = new Color("hsl(0,100%,50%)");
+            var green = red.spin(120);
+            var white = red.lighten(100);
+            $("#indigobox").css({
+                "background":indigo,
+                "color":indigo.lighten(100)
+            });
+            $("#lightindigo").css({
+                "background":indigo.lighten(30),
+                "color":new Color("#fff")
+            });
+            $("#green").css({
+                "background":green,
+                "color":red
+            });
+            $("#transbox").css({
+                "color":red.spin(-180).fadeout(0.7)
+            });
+		});
+	</script>
+</head>
+
+<body>
+	<div id="indigobox">This page</div>
+	<div id="lightindigo">is an example</div>
+	<div id="green">of how to use the color extension</div>
+	<div id="transbox">with translucency!</div>
+</body>
+</html>
+
